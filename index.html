@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection en cours...</title>
+    <script>
+        window.onload = function() {
+            var surveys = [
+"https://columbo.univ-amu.fr/index.php/256279?lang=fr", // Condition 1
+"https://columbo.univ-amu.fr/index.php/779493?lang=fr", // Condition 2
+"https://columbo.univ-amu.fr/index.php/213511?lang=fr", // Condition 3
+"https://columbo.univ-amu.fr/index.php/225494?lang=fr", // Condition 4
+"https://columbo.univ-amu.fr/index.php/681977?lang=fr", // Condition 5
+"https://columbo.univ-amu.fr/index.php/344411?lang=fr" // Condition 6
+            ];
+            var randomIndex = Math.floor(Math.random() * surveys.length);
+            window.location.href = surveys[randomIndex];
+        };
+    </script>
+</head>
+<body>
+    <p>Redirection en cours...</p>
+</body>
+</html>
